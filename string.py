@@ -14,7 +14,7 @@ print(n[6:len(n)])
 a='apple'
 print(a[::-1])
 
-st= "this is string"
+
 
 n='pythonprogramming'
 print(len(n))
@@ -93,3 +93,10 @@ st=input("enter: ")
 for ch in st:
     print(ch*2)
 
+# reverse a string without slicing
+st=input("enter string: ")
+reverse_st=""
+for ch in st:
+    reverse_st=ch+reverse_st
+
+print(reverse_st)    
