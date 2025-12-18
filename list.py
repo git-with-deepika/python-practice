@@ -1,5 +1,5 @@
 # list is sequence data type which store data or value in a sequence
-'''new_list=[1,2,3]
+new_list=[1,2,3]
 details=['ram','A23',12673]
 print(type(details))
 print(new_list)
@@ -73,7 +73,7 @@ print(li)
 li=[1,2,3,4]
 for i in range(len(li)):
     li[i]=li[i]+2
-print(li)'''
+print(li)
 
 # addtion  of two list
 li=[1,2,3,4]
