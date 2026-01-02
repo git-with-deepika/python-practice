@@ -179,7 +179,7 @@ for i in range(1,n+1):
          print("*",end='') 
         else:
          print(" ",end='')   
-    print()    
+    print()     
 # *******
 #  *****
 #   ***
@@ -311,7 +311,6 @@ for i in range(1,n+1):
     b=a+i-1
     for k in range(i-1):
         print(b-(k+1),end=' ')
-        
     print()     
 
 
@@ -474,7 +473,7 @@ for i in range(2,n+1):
     for k in range(2,i+1):
         print(chr(d+k),end=' ')    
     print()   
-##############################
+
 #* * * * * 
 #*       *
 #*       *
@@ -595,7 +594,7 @@ for i in range(n-1,0,-1):
              print(' ',end=' ') 
     print() 
 
-#        A ####################
+#        A 
 #      A   B
 #    A       C
 #  A           D
