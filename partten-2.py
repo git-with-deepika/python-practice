@@ -145,52 +145,53 @@ for i in range(1,n+1):
     for k in range(1,n+1):
         print(chr(a+k),end=' ')
     print()
-#        * 
-#      * * *
-#    * * * * *
-#  * * * * * * *
+#    *
+#   ***
+#  *****
+# *******
+#*********
 n=5
 for i in range(1,n+1):
     for j in range(n-i):
-        print(" ",end=' ')
+        print(" ",end='')
     for k in range(1,i+1):
-        print("*",end=' ')
+        print("*",end='')
     for k in range(2,i+1):
-        print("*",end=' ')
+        print("*",end='')
     print()  
 
-#        * 
-#      *   *
-#    *       *
-#  *           *
-#* * * * * * * * *
+#     *
+#    * *
+#   *   *
+#  *     *
+# *********
 n=5
 for i in range(1,n+1):
     for j in range(n-i):
-        print(" ",end=' ')
+        print(" ",end='')
     for k in range(1,i+1):
         if i==n or k==1 or k==n :
-         print("*",end=' ') 
+         print("*",end='') 
         else:
-         print(" ",end=' ')   
+         print(" ",end='')   
     for k in range(2,i+1):
         if i==n or k==1 or k==n or k==i:
-         print("*",end=' ') 
+         print("*",end='') 
         else:
-         print(" ",end=' ')   
+         print(" ",end='')   
     print()    
-#* * * * * * * 
-#  * * * * *
-#    * * *
-#      *
+# *******
+#  *****
+#   ***
+#    *
 n=4
 for i in range(n,0,-1):
     for j in range(n-i):
-        print(" ",end=' ')
+        print(" ",end='')
     for k in range(1,i+1):
-        print("*",end=' ')
+        print("*",end='')
     for k in range(2,i+1):
-        print("*",end=' ')
+        print("*",end='')
     print()    
 #* 
 #* * 
@@ -514,7 +515,7 @@ for i in range(1,n+1):
         else:
          print(' ',end=' ') 
     print()               
-#       * 
+#        * 
 #      *   *
 #    *       *
 #  *           *
