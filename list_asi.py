@@ -184,3 +184,4 @@ print(f"List after removing negative numbers: {data_list}")
 #Q13 Determine and print the second largest numerical value  list without sort
 #Q14 Cyclic Right Shift
 #Q15 Check ascending order
+#
