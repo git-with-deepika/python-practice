@@ -301,17 +301,16 @@ for i in range(1,n+1):
 #  4 5 6 7 6 5 4
 #5 6 7 8 9 8 7 6 5
 n=5
-temp=1
+
 for i in range(1,n+1):
-    for j in range(n-i):
-        print(" ",end=' ')
-    a=i
-    for k in range(i):
-        print(a+k,end=' ')
-    b=a+i-1
-    for k in range(i-1):
-        print(b-(k+1),end=' ')
-    print()     
+  for j in range(n-i):
+    print(" ",end=" ")
+  for k in range(i):
+    print(k+i,end=' ')
+  b=i+i-1  
+  for k in range(i-1):
+    print(b-(k+1),end=' ')  
+  print()     
 
 
 #        1 
