@@ -50,11 +50,16 @@ for i in range(1,6):
     print()
     a+=1 
 
-#E ######################
+#E 
 #E F
 #E F G
 #E F G H
 #E F G H I
+n=5
+for i in range(n):
+   for j in range(i,-1,-1):
+        print(chr(69-j),end=" ")
+   print()    
 #        * 
 #      * *
 #    * * *
@@ -295,7 +300,7 @@ for i in range(1,n+1):
          print(' ',end=' ')
     print()  
 
-#        1 #########
+#        1 
 #      2 3 2
 #    3 4 5 4 3
 #  4 5 6 7 6 5 4
@@ -417,27 +422,11 @@ for i in range(n-1,0,-1):
 #  1 2 3 4 5 6 7 
 #1 2 3 4 5 6 7 8 9 
 n=5 
-for i in range(n,0,-1):
-    for j in range(n-i):
-        print(' ',end=' ')
-    a=i  
-    for k in range(1,i+1):
-        print(k,end=' ')
-    a=i-1     
-    for k in range(2,i+1):
-        print((a+k),end=' ')    
-    print()    
-for i in range(2,n+1):
-    for j in range(n-i):
-        print(' ',end=' ')
-    a=i  
-    for k in range(1,i+1):
-        print(k,end=' ')
-    a=i-1     
-    for k in range(2,i+1):
-        print((a+k),end=' ')    
-    print()    
-
+for i in range(n):
+   for j in range(i+1):
+        print(" ",end=" ")
+   for k in range(2*(n-i)-1):
+      print(k+1,end=" ")    
 
 ###############
 
@@ -451,27 +440,34 @@ for i in range(2,n+1):
 #  A B C D F G H
 #A B C D E F G H I
 n=5
-d=68
-for i in range(n,0,-1):
-    for j in range(n-i):
-        print(' ',end=' ')
-    a=i  
-    for k in range(1,i+1):
-        print(chr(64+k),end=' ')
-    a=i-1    
-    for k in range(2,i+1):
-        print(chr(d+k),end=' ')    
-    print()    
-for i in range(2,n+1):
-    for j in range(n-i):
-        print(' ',end=' ')
-    a=i  
-    for k in range(1,i+1):
-        print(chr(64+k),end=' ')
-    a=i 
-    for k in range(2,i+1):
-        print(chr(d+k),end=' ')    
-    print()   
+for i in range(n):
+  for j in range(i+1):
+    print(" ",end=" ")
+  for k in range(2*(n-i)-1):
+    print(chr(65+k),end=' ')
+  print()
+for i in range(n-1,-1,-1):
+  for j in range(i+1):
+    print(" ",end=" ")
+  for k in range(2*(n-i)-1):
+    print(chr(65+k),end=' ')
+  print()
+
+
+############
+n=5
+for i in range(n):
+  for j in range(i+1):
+    print(" ",end=" ")
+  for k in range(2*(n-i)-1):
+    print(chr(65+k),end=' ')
+  print()
+for i in range(2,n):
+    for j in range(i+1):
+        print(" ",end=" ")
+    for k in range(2*(n-i)-1):
+        print(chr(65+k),end=' ')
+    print()     
 
 #* * * * * 
 #*       *
@@ -529,12 +525,12 @@ for i in range(1,n+1):
         print(' ',end=' ')
     for k in range(1,i+1):
         if   k==1  :
-         print("*",end=' ')
+         print(chr(65+k-1),end=' ')
         else:
            print(' ',end=' ') 
     for k in range(2,i+1):
             if  k==1 or k==i :
-             print("*",end=' ')
+             print(chr(65+k-1),end=' ')
             else:
              print(' ',end=' ') 
     print()        
@@ -543,12 +539,12 @@ for i in range(n-1,0,-1):
         print(' ',end=' ')
     for k in range(1,i+1):
         if i==n or k==1  :
-         print("*",end=' ')
+         print(chr(65+k-1),end=' ')
         else:
            print(' ',end=' ') 
     for k in range(2,i+1):
             if i==n or k==1 or k==i :
-             print("*",end=' ')
+             print(chr(65+k-1),end=' ')
             else:
              print(' ',end=' ') 
     print()        
