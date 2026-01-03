@@ -81,4 +81,11 @@ li1=[5,6,7,8]
 for i in range(len(li)):
     li[i]=li[i]+li1[i]
 print(li)    
-    
+
+# comman element 
+li1=[1,2,3,4,5]
+li2=[4,5,6,7,8]
+for i in range(len(li1)):
+    for j in range(len(li2)):
+        if li1[i]==li2[j]:
+            print(li1[i],end=' ')
