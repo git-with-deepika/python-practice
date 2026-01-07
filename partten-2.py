@@ -490,7 +490,7 @@ for i in range(n):
   for k in range(2*(n-i)-1):
     print(chr(65+k),end=' ')
   print()
-for i in range(2,n):
+for i in range(n-1,-1,-1):
     for j in range(i+1):
         print(" ",end=" ")
     for k in range(2*(n-i)-1):
@@ -546,6 +546,45 @@ for i in range(1,n+1):
 #    *       *
 #      *   *
 #        *
+n=5
+for i in range(1,n+1):
+    for j in range(n-i):
+        print(' ',end=' ')
+    for k in range(1,i+1):
+        if   k==1  :
+         print('*',end=' ')
+        else:
+           print(' ',end=' ') 
+    for k in range(i-1,0,-1):
+            if  k==1 or k==i :
+             print('*',end=' ')
+            else:
+             print(' ',end=' ') 
+    print()        
+for i in range(n-1,0,-1):
+    for j in range(n-i):
+        print(' ',end=' ')
+    for k in range(1,i+1):
+        if i==n or k==1  :
+         print('*',end=' ')
+        else:
+           print(' ',end=' ') 
+    for k in range(i-1,0,-1):
+            if i==n or k==1 or k==i :
+             print('*',end=' ')
+            else:
+             print(' ',end=' ') 
+    print() 
+
+#         A 
+#        A   C 
+#      A       E 
+#    A           G 
+#  A               I 
+#    A           G 
+#      A       E 
+#        A   C 
+#          A
 
 n=5 
 for i in range(1,n+1):
@@ -670,3 +709,33 @@ for i in range(n-1,0,-1):
         print("*",end=' ')
     print()   
           
+#* * * * * * * * * * 
+#* * * *     * * * * 
+#* * *         * * * 
+#* *             * * 
+#*                 * 
+#*                 * 
+#* *             * * 
+#* * *         * * * 
+#* * * *     * * * * 
+#* * * * * * * * * * 
+
+n=5
+for i in range(n,0,-1):
+  for j in range(i):
+    print("*",end=' ')
+  for j in range(2*(n-i)):
+    print(' ',end=' ')
+  for k in range(i):
+    print("*",end=' ')
+
+  print()  
+for i in range(1,n+1):
+  for j in range(i):
+    print("*",end=' ')
+  for j in range(2*(n-i)):
+    print(' ',end=' ')
+  for k in range(i):
+    print("*",end=' ')
+
+  print() 
