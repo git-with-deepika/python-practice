@@ -87,7 +87,7 @@ for i in range(len(li)):
 print(f"The list: {li}")
 print(f"The smallest element: {smallest}")    
 
-#Q3 Createlist elements ofthe original list inreverse dontuse reverse(),slicing.
+#Q3 Createlist elements ofthe original list inreverse do not use reverse(),slicing.
 li = [1,2,3,4,5,6]
 left = 0
 right =len(li)-1
@@ -108,7 +108,7 @@ for i in range(n - 1):
 
 print(f"Sorted list using Bubble Sort: {data}") 
 
-#Q5 Generate new lifrom an original where allduplicate haveremoved,without set()
+#Q5 Generate new list from an original where all duplicates have removed,without set()
 original_list = [10, 20, 10, 30, 40, 20, 50, 30]
 unique_list = []
 
