@@ -378,7 +378,7 @@ new=[]
 # (tem * 9/5) +32
 
 def temp(t):
-      return (t*9//5)+32
+      return (t*9/5)+32
 
 for element in lis:
       new_temp=temp(element)
