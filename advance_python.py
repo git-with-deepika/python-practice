@@ -73,3 +73,24 @@ print(rand_num)
 np.random.seed(3)
 new_num=np.random.randint(1,10,4)
 print(new_num)
+
+
+# 6. view vs copy :- view means changes in the original data and copy means changes in duplicate 
+#                    data will not reflact the original data
+
+arr=np.array([10,20,30,40,50,60,70,80])
+print(arr)
+arr[3:6]=0
+print(arr)
+
+
+cp=np.array([10,20,30,40,50,60,70,80])
+new_cp=cp[3:6].copy()
+new_cp[:]=0
+print(new_cp)
+
+
+# opetaions in array
+# (1) arange() :- it works as for loop in numpy
+a=np.arange(1,16,1)
+print(a)
