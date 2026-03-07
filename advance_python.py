@@ -94,3 +94,77 @@ print(new_cp)
 # (1) arange() :- it works as for loop in numpy
 a=np.arange(1,16,1)
 print(a)
+
+
+a > 10
+print(a)
+
+
+b = a > 10
+print(a[b])
+
+b= a%2==0
+print(a[b])
+
+# (2) reshaping():-
+# reshaping condition
+# n(rows) * n(colunm)=n(total_elements)
+a=np.random.randint(1,50,12)
+print(a)
+
+a.reshape(2,6)
+print(a)
+
+a.reshape(3,4)
+print(a)
+
+
+a=np.arange(1,5).reshape(2,2)
+print(a)
+
+b=np.arange(5,9).reshape(2,2)
+print(b)
+
+print(a+b)
+print(a-b)
+# not matrix multiplication
+print(a*b)
+
+# matrix multiplication
+print(a.dot(b))
+
+
+a=np.arange(1,5)
+print(a)
+print(a**2)
+print(a**3)
+
+print(np.sqrt(a))
+print(np.sin(a))
+print(np.cos(a))
+
+# (3) linspace() :- it will return same gape values in given range
+a=np.linspace(1,2,5)
+print(a)
+
+# (4) unique() :- it will rwturn 3 array
+# arr  -> return original values of array
+# return_index -> True-> return index value of unique numbers 
+# return_counts -> True -> it will return total fequency of each unique values
+
+a=np.array([1,2,2,3,2,2,3,4,5,5,6])
+print(a)
+
+a=np.unique(a,return_index= True, return_counts=True)
+print(a)
+
+
+# hstack() and vstack()
+# hstack():- it will add 2 or more array horizontally
+# vstack():-it will add 2 or more array vartically
+
+a=np.arange(1,5).reshape(2,2)
+b=np.arange(5,9).reshape(2,2)
+c=np.arange(9,13).reshape(2,2)
+print(np.hstack((a,b,c)))
+print(np.vstack((a,b,c)))
